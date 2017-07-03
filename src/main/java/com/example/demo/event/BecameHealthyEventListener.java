@@ -8,7 +8,6 @@ public class BecameHealthyEventListener {
 	@EventListener
 	public void handleCrashEvent(BecameHealthyEvent event) {
 		System.err.println(Thread.currentThread().getName() + " Became healthy ("
-				+ event.getPayload().getOrgSpaceApp() + ") " + event.getTimestamp()
-				+ " *********");
+				+ event.getPayload().getOrgSpaceApp() + ") " + event.getTimestamp());
 	}
 }

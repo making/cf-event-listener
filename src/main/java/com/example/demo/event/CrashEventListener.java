@@ -12,6 +12,6 @@ public class CrashEventListener {
 		SyslogDrainPayload payload = event.getPayload();
 		System.err.println(Thread.currentThread().getName() + " Crashed!! ("
 				+ payload.getOrgSpaceApp() + ") " + event.getTimestamp() + " "
-				+ payload.getMessage().trim() + " *********");
+				+ payload.getMessage().trim());
 	}
 }
