@@ -6,7 +6,7 @@ import org.springframework.integration.syslog.RFC5424SyslogParser;
 import org.springframework.integration.syslog.SyslogHeaders;
 
 public class SyslogDrainPayload {
-	private final RFC5424SyslogParser parser = new RFC5424SyslogParser();
+	private static final RFC5424SyslogParser parser = new RFC5424SyslogParser();
 	final Map<String, ?> payload;
 
 	public SyslogDrainPayload(String log) {
